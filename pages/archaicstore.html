@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilclaw Interactive</title>
+    <link rel="stylesheet" href="../css/stylearchaicstore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="../js/hide.js"></script>
+</head>
+<body>
+
+
+
+    <header>
+        <a href="archaic.html"><img src="../img/archaiclogo.png" alt="The orange logo of a game called Archaic, with a furious raptor behind"></a>
+        <nav>
+            <ul>
+                <li><a id="buycrowns" href="archaicstore.html">Buy Crowns 🜲</a></li>
+                <li><a href="archaicwiki.html">Wiki</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:wildclaw.archaic@email.com?subject=Support_Requested&body= *** SUPPORT FORM ***%0D%0A_____________________%0D%0AYour Username:%0D%0A%0D%0A_____________________%0D%0AYour Issue:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A _____________________%0D%0AThank you for using the support form. Please note that we might not respond to enquiries that do not include a support ticket or our support form. Feel free to send suggestions via this form, although we may not always reply to suggestions">Support</a></li>
+                <li><a href="https://store.steampowered.com/app/2707540/Archaic/" target=”_blank”><svg xmlns="https://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <main>
+    <div id="bg">
+        <div class="featured">
+            <h1>Buy Crowns</h1>
+            <!-- <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+            <stripe-pricing-table pricing-table-id="prctbl_1ONlWGDD4OnaOTwaWIrRgu3V"
+            publishable-key="pk_live_51NZjdRDD4OnaOTwaY9JicSvLx6klR9uddlvPcDNLktiULhmo5ToRALSljSh8kurC9u0J6NLfyhUSJ5OJUYsYsEED00DQSBjejR">
+            </stripe-pricing-table> -->
+            <form id="paymentForm" style="display: flex; flex-direction: column; align-items: center;">
+                <label for="username" style="color: rgb(130, 130, 130); padding: 1rem;" for="username">Username (REQUIRED)</label>
+                <input type="text" id="username" name="username" required style="margin-bottom: 3rem; width: 15rem; height: 1.5rem; background-color: rgba(77, 77, 77, 0.099); color: white; border-color: black;" type="text" id="fname" name="fname"><br><br>
+              </form>
+
+
+            <script src="https://checkout.stripe.com/checkout.js"></script>
+
+        <div id="packages">
+
+            <div class="crownsPackage">
+            <h2>500 🜲 (Regular Pricing)</h2>
+            <p><br>A total of 500 crowns for your wildclaw account, usable with wildclaw games.</p>
+            <h1>$6.49</h1>
+            <button id="deal1">Buy</button>
+            </div>
+
+            <div class="crownsPackage">
+                <h2>1000 🜲 (+200 BONUS)</h2>
+                <p><br>A total of 1200 crowns for your wildclaw account, usable with wildclaw games.</p>
+                <h1>$12.99</h1>
+                <button id="deal2">Buy</button>
+            </div>
+
+            <div class="crownsPackage">
+                <h2>2000 🜲 (+500 BONUS)</h2>
+                <p><br>A total of 2500 crowns for your wildclaw account, usable with wildclaw games.</p>
+                <h1>$25.99</h1>
+                <button id="deal3">Buy</button>
+            </div>
+
+            <div class="crownsPackage bestvalue">
+                <h2>4000 🜲 (+1500 BONUS)</h2>
+                <p><span style="color: rgb(103, 255, 95);"><i>☆ Best Value</i></span><br>A total of 5500 crowns for your wildclaw account, usable with wildclaw games.</p>
+                <h1>$51.99</h1>
+                <button id="deal4">Buy</button>
+            </div>
+
+        </div>
+
+                
+
+
+
+<script>
+var handler = StripeCheckout.configure({
+    key: 'pk_live_51NZjdRDD4OnaOTwaY9JicSvLx6klR9uddlvPcDNLktiULhmo5ToRALSljSh8kurC9u0J6NLfyhUSJ5OJUYsYsEED00DQSBjejR',
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+        // Fetch the username from the input field
+        var username = document.getElementById('username').value;
+
+        // Alert the user about the successful payment
+        alert("Thank you for your purchase!");
+
+        // Send the token ID, email, and username to your server
+        var url = `../php/send500crowns.php?username=${encodeURIComponent(username)}`;
+
+        fetch(url)
+        .then(response => response.text()) // Read the response as text
+        .then(data => {
+            console.log('Server response:', data);
+
+            try {
+                const jsonData = JSON.parse(data);
+                console.log('Parsed JSON:', jsonData);
+                // Handle the response from the server, if needed
+            } catch (error) {
+                console.error('Failed to parse JSON:', error);
+            }
+        })
+        .catch(error => {
+            console.error("Failed to handle Stripe success on the server:", error);
+        });
+    }
+});
+
+
+
+document.getElementById('deal1').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+
+    var user = document.getElementById('username').value;
+        if(user.length < 6){
+            alert("Please enter your in-game username (case-sentitive & 6+ characters");
+            return;
+        }
+    
+    handler.open({
+        name: '500 Crowns',
+        description: 'For a total of 500 crowns.',
+        currency: 'usd',
+        amount: 1
+    });
+    e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+    handler.close();
+});
+
+</script>
+
+
+        </div>
+    </div>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p><a href="../index.html">© Wildclaw Interactive 2023</a> | All Rights Reserved</p>
+    </footer>
+
+
+
+    
+</body>
+</html>
